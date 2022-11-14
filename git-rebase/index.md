@@ -192,8 +192,6 @@ $ git graph feature/with-merge
 
 you rewrote history, so you need to force-push
 
-![w:500](./force-push.jpeg)
-
 ```shell
 $ git push --force-with-lease
 $ git please # <- or use the alias :)
