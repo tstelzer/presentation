@@ -304,15 +304,15 @@ we've merged the two commits into one
 
 ----
 
-## when to use what?
+when to use what?
 
-- `git rebase -i` for cleaning up local branch
-- `git rebase` for pulling updates into local branch
 - `git merge` for public branches (e.g. PRs)
+- `git rebase` for pulling updates into local branch
+- `git rebase -i` for cleaning up local branch
 
 ----
 
-This workshop is essentially just
-[atlassian.com/git/tutorials/merging-vs-rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing) 
-:shrug:
+Thanks For Listening!
+
+Source for slides at [github.com/tstelzer/presentation](https://github.com/tstelzer/presentation)
 
