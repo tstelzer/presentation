@@ -1,0 +1,11 @@
+{
+    "name": "presentation",
+    "packageManager": "yarn@3.2.4",
+    "scripts": {
+        "dev": "marp --html -w git-rebase/index.md",
+        "powerpoint": "marp --html git-rebase/index.md -o git-rebase/index.pptx"
+    },
+    "dependencies": {
+        "@marp-team/marp-cli": "^2.2.0"
+    }
+}
