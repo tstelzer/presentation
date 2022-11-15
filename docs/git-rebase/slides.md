@@ -4,7 +4,7 @@ class: invert
 size: 16:9
 ---
 
-<span style="text-shadow: 2px 2px 0px darkgreen;">git rebase workshop</span>
+<span style="text-shadow: 2px 2px 0px black;">git: merge vs rebase</span>
 
 ![bg contain](./cover.png)
 
@@ -18,7 +18,9 @@ agenda
 
 ----
 
-git config
+clone [github.com/tstelzer/example-git-repository](https://github.com/tstelzer/example-git-repository)
+
+helpful git config
 
 ```gitconfig
 [alias]
@@ -28,9 +30,7 @@ git config
 
 ----
 
-example repository state
-
-https://github.com/tstelzer/example-git-repository
+repository state prior to `merge`
 
 ```shell
 $ ls
@@ -85,7 +85,7 @@ $ git graph --all
 
 ----
 
-merging `master` on top of our feature branch
+`merge` creates a merge-commit that sits _on top_ of our changes
 
 ```shell
 $ git checkout feature/with-merge
@@ -147,7 +147,7 @@ $ git graph
 
 ----
 
-rebasing!
+rebasing
 
 ```shell
 $ git rebase master
@@ -163,6 +163,20 @@ Could not apply a7c0aea... feat: update a
 ```
 
 Again, fixing the conflict.
+
+----
+
+`rebase` _moves_ the base of our branch to a different git ref
+
+```sh
+* 4b1f195  (HEAD -> refs/heads/feature/with-rebase) feat: update a
+* 7dc6cbc  (refs/heads/master) feat: diverge! # <- new base
+* 16924da  feat: add b # <- old base
+* 5533465  feat: add a
+* 0fc0681  root
+```
+
+you can `rebase` to _any_ other ref (commit, branch)
 
 ----
 
@@ -198,6 +212,10 @@ $ git please # <- or use the alias :)
 ```
 
 <span style="color: red;">never force-push to public branches</span> :skull:
+
+----
+
+demo?
 
 ----
 
@@ -257,6 +275,10 @@ $ git rebase --interactive bf3aa50  # same thing as above
 
 ----
 
+`rebase -i`, in addition to moving the base ref, let's you change all the commits up to that ref
+
+----
+
 change
 
 ```sh
@@ -312,6 +334,6 @@ when to use what?
 
 Thanks For Listening!
 
-Slides at [tstelzer.github.io/presentation/git-rebase/](https://tstelzer.github.io/presentation/git-rebase/)
+Slides at [tstelzer.github.io/presentation/git-rebase/slides.html](https://tstelzer.github.io/presentation/git-rebase/slides.html)
 Source for slides at [github.com/tstelzer/presentation](https://github.com/tstelzer/presentation)
 
