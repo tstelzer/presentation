@@ -312,5 +312,6 @@ when to use what?
 
 Thanks For Listening!
 
+Slides at [tstelzer.github.io/presentation/git-rebase/](https://tstelzer.github.io/presentation/git-rebase/)
 Source for slides at [github.com/tstelzer/presentation](https://github.com/tstelzer/presentation)
 
