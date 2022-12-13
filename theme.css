@@ -1,0 +1,16 @@
+@import 'uncover';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300..900');
+@import url('https://fonts.googleapis.com/css?family=Fira+Code');
+
+:root {
+    font-family: 'Montserrat', sans;
+    font-weight: 400;
+}
+
+code {
+    font-family: 'Fira Code', monospace;
+}
+
+tr {
+    font-size: 0.7rem;
+}

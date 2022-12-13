@@ -2,8 +2,8 @@
     "name": "presentation",
     "packageManager": "yarn@3.2.4",
     "scripts": {
-        "dev": "marp --html -w docs/git-rebase/slides.md",
-        "powerpoint": "marp --html docs/git-rebase/slides.md -o docs/git-rebase/slides.pptx"
+        "dev": "marp --theme theme.css --html -w docs/*/slides.md",
+        "powerpoint": "marp --theme theme.css --html docs/git-rebase/slides.md -o docs/git-rebase/slides.pptx"
     },
     "dependencies": {
         "@marp-team/marp-cli": "^2.2.0"
